@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ameritec || Ứng Dụng Bảo Mật Di Động Hàng Đầu</title>
+    <link rel="icon" href="/images/icon-ameritec.png" sizes="30x30" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/footer.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <div class="wrap-menu">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/images/logo-ngang.png"
+                alt="logo-ameritec"
+                width="200"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                  >
+                    Giới Thiệu
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"
+                      >Giới Thiệu Về Công Ty CP Ameritec</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                  >
+                    Đứng Đầu Lĩnh Vực
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"
+                      >Bảo Mật Di Động Doanh Nghiệp</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      >Nghiên Cứu Mối Đe Dọa Trên Di Động</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      >Qui Định Tuân Thủ Cho Thiết Bị Di Động</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                  >
+                    Sản Phẩm
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"
+                      >Ứng Dụng Bảo Mật Thiết Bị Di Dộng - AIPS</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      >Bộ Bảo Vệ Ứng Dụng Di Động - MAPS</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      >Phân Tích Ứng Dụng Nâng Cao Z3A</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đối Tác</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giải Pháp</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tin Tức - Sự Kiện</a>
+                </li>
+              </ul>
+              <div class="btn-menu my-2 my-lg-0">
+                <a href="#" class="btn btn-login">Đăng Nhập</a>
+                <a
+                  href="#"
+                  class="btn btn-register btn btn-register animate__animated animate__headShake animate__infinite"
+                  >MUA GÓI BẢO MẬT</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="home-banner-text">
+              <h3 class="home-banner-title">
+                ỨNG DỤNG BẢO MẬT DI ĐỘNG<br />
+                HÀNG ĐẦU
+              </h3>
+              <span class="d-block"
+                >Ứng dụng ngăn chặn tin tặc xâm nhập thiết bị di động đầu tiên
+                trên thế giới giải pháp bảo vệ toàn diện cho các thiết bị IOS &
+                Android</span
+              >
+              <a
+                href="#"
+                class="btn btn-register animate__animated animate__headShake animate__delay-2s animate__repeat-3"
+                >MUA GÓI BẢO MẬT</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="home-banner-text">
+              <h3 class="home-banner-title">
+                ỨNG DỤNG BẢO MẬT DI ĐỘNG<br />
+                HÀNG ĐẦU
+              </h3>
+              <span class="d-block"
+                >Cung cấp các giải pháp phòng thủ trên thiết bị theo thời gian
+                thực chống lại các mối đe dọa đã biết và chưa biết</span
+              >
+              <a
+                href="#"
+                class="btn btn-register animate__animated animate__headShake animate__delay-2s animate__repeat-3"
+                >MUA GÓI BẢO MẬT</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="home-banner-text">
+              <h3 class="home-banner-title">
+                ỨNG DỤNG BẢO MẬT DI ĐỘNG<br />
+                HÀNG ĐẦU
+              </h3>
+              <span class="d-block"
+                >Nền tảng của chúng tôi bảo vệ doanh nghiệp của bạn bằng cách
+                cung cấp một lớp bảo mật di động hoàn chỉnh</span
+              >
+              <a
+                href="#"
+                class="btn btn-register animate__animated animate__headShake animate__delay-2s animate__repeat-3"
+                >MUA GÓI BẢO MẬT</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="sud">
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 1920 181.1"
+          style="enable-background: new 0 0 1920 181.1"
+          xml:space="preserve"
+        >
+          <style type="text/css">
+            .st1 {
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              fill: #fff;
+            }
+          </style>
+          <g>
+            <path
+              class="st1"
+              d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                     c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                     c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                     c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                     c15.3,22.7,51,22.7,53,23v28.1H0V80z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <section class="strength">
+        <div class="section-heading2">
+          <h2>ỨNG DỤNG <img src="/images/aips-logo.png" alt="" width="190px" style="margin-top: -20px;"></h2>
+        </div>
+        <div class="container-xl">
+          <div class="strength-top row">
+            <div class="col-md-6 shield">
+              <img src="/images/shield-mb.png" alt="" width="100%">
+            </div>
+            <div class="col-md-6 description">
+              <div class="desc-text">
+                <h2 class="under-banner-title">
+                  ỨNG DỤNG BẢO MẬT TỐT NHẤT CHO ĐIỆN THOẠI
+                </h2>
+                <div class="under-banner-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis odit sapiente, recusandae quis, ipsam adipisci
+                    similique vel distinctio aliquam nesciunt.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-register"> MUA GÓI BẢO MẬT </a>
+              </div>
+              <iframe style="border-radius: 20px; margin-top: 40px;" width="100%" height="350px" src="https://www.youtube.com/embed/JhGCnn5qkdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="strength-items">
+          <div class="section-heading3" style="margin-top: 0;">
+            <h3 style="color: #fff">TÍNH NĂNG 💪</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Quét liên tục theo thời gian thực (phần cài đặt trên
+                      thiết bị, các phần mềm, ứng dụng, mạng wifi).
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Phát hiện 100% những mối đe dọa tấn công.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Giúp người dùng kịp thời ngăn chặn sự tấn công, xâm nhập của tin tặc.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Lưu lại lịch sử các mối đe dọa tấn công (ngày, giờ, thông tin chi tiết, địa điểm bị tấn công…).
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Đưa ra cảnh bảo kèm theo hướng dẫn xử lý đối với từng trường hợp cụ thể.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Khu vực nguy hiểm (Danger Zone): Bản đồ những điểm truy cập wifi đã từng bị tấn công trong 30 ngày gần nhất.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 strength-item">
+              <div class="strength-item">
+                <div class="content">
+                  <div class="strength-item-content">
+                    <p>
+                      Tính năng phân tích website: cho phép kiểm tra một đường dẫn website có an toàn hay không trước khi người dùng bấm vào truy cập.
+                    </p>
+                  </div>
+                </div>
+                <div class="icon-strength-item">
+                  <img src="/images/logo-zIPS.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="container-xl">
+            <div class="develop-by">
+              <div class="section-heading3">
+                <h3>ỨNG DỤNG ĐƯỢC PHÁT TRIỂN BỞI <img src="/images/zimperium-logo.png" alt="ZIMPERIUM" width="300px" style="margin-top: -15px;margin-left: 10px;"></h3>
+                <p>ĐỐI TÁC CỦA ZIMPERIUM</p>
+                <div class="container">
+                  <div class="partner-list">
+                    <div class="row" style="align-items: center;">
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/logo-google.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/microsoft-logo.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/oracle.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/samsung.png" alt="partner-logo">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="align-items: center;">
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/mcafee.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/SierraVentures_Logo.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/softbank.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/tmobile.png" alt="partner-logo">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="align-items: center;">
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/tventures.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/Warburg-Pincus.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/blackberry.png" alt="partner-logo">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="partner-logo">
+                          <img src="/images/mobileiron.png" alt="partner-logo">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="packages">
+              <div class="section-heading3">
+                <h3>CÁC GÓI BẢO MẬT</h3>
+                <p>Mobile Security Technology Protecting Millions of Devices</p>
+              </div>
+              <div class="package-item-contain">
+                <div class="package-item-item">
+                  <div class="image-contain">
+                    <img
+                      src="https://vn.elsaspeak.com/wp-content/uploads/2020/09/plans-one-year.png"
+                      class="private-package"
+                      alt="GÓI CÁ NHÂN"
+                    />
+                  </div>
+                  <div class="package-item-price-detail">
+                    <h5 class="pack-title">GÓI CÁ NHÂN</h5>
+                    <p class="old-price">(1 THIẾT BỊ)</p>
+                    <p class="sell-price">$40 USD</p>
+                    <a href="#" class="btn btn-register" style="margin: auto">Mua ngay</a>
+                  </div>
+                </div>
+                <div class="package-item-item">
+                  <div class="image-contain">
+                    <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/09/plans-life.png" class="4-package" alt="GÓI KHỞI NGHIỆP"/>
+                  </div>
+                  <div class="package-item-price-detail">
+                    <h5 class="pack-title">GÓI KHỞI NGHIỆP</h5>
+                    <p class="old-price">(4 GIẤY PHÉP, 4 THIẾT BỊ)</p>
+                    <p class="sell-price">$160 USD</p>
+                    <a  class="btn btn-register" style="margin: auto">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-xl">
+            <div class="get-app">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="https://ameritecjsc.com/wp-content/themes/zimperium/assets/img/icon-shield.png" alt="AMERITEC">
+                    </div>
+                    <div class="media-body">
+                        <h2 class="sc-title">DOWNLOAD APP</h2>
+                        <h3 class="sc-sub-title">TRẢI NGHIỆM AIPS - ỨNG DỤNG BẢO VỆ ĐIỆN THOẠI TỐT NHẤT</h3>
+                    </div>
+                </div>
+                <div class="link-to-store">
+                  <div class="img-hover-zoom">
+                      <a href="https://apps.apple.com/vn/app/ameritec-aips/id1503362012">
+                          <img class="sc-image" src="https://ameritecjsc.com/wp-content/themes/zimperium/assets/img/app-store.png" alt="AMERITEC">
+                      </a>
+                  </div>
+                  <div class="img-hover-zoom">
+                      <a href="https://play.google.com/store/apps/details?id=com.ameritecjsc.zips">
+                          <img class="sc-image" src="https://ameritecjsc.com/wp-content/themes/zimperium/assets/img/play-store.png" alt="AMERITEC">
+                      </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <div class="sud1">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 181.1"
+        style="enable-background: new 0 0 1920 181.1"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st2 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #0f0d2a;
+          }
+        </style>
+        <g>
+          <path
+            class="st2"
+            d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                    c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                    c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                    c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                    c15.3,22.7,51,22.7,53,23v28.1H0V80z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <section class="customer-talk">
+      <div class="section-heading3">
+        <h3 style="color: #fff">KHÁCH HÀNG NÓI VỀ CHÚNG TÔI 💌</h3>
+        <p style="color: #fff">LỰA CHỌN BẢO MẬT TỐT NHẤT CHO ANDROID VÀ IOS</p>
+      </div>
+      <div class="customer-talk-slider mb-4">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="elsa-feeling-review-item">
+                <div class="review-item-header">
+                  <img src="https://vn.elsaspeak.com/wp-content/themes/elsa-tot/static/Icons-Logo/comma-icon.svg" class="comma-icon">
+                  <h5>Công nghệ tuyệt vời</h5>
+                </div>
+                <p class="review-item-text"> Công nghệ nhận diện giọng nói người dùng và so sánh trực tiếp với giọng bản xứ. Đây sẽ là một bước tiến lớn so với cách học tiếng Anh truyền thống</p>
+                <div class="author-review">
+                  <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/09/founder_Vinh.svg" class="author-img" alt="author-img">
+                  <div class="info-author">
+                    <p class="author-name">VINH PHAM</p>
+                    <p class="author-work-position">Google Play Store</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="elsa-feeling-review-item">
+                <div class="review-item-header">
+                  <img src="https://vn.elsaspeak.com/wp-content/themes/elsa-tot/static/Icons-Logo/comma-icon.svg" class="comma-icon">
+                  <h5>Công nghệ tuyệt vời</h5>
+                </div>
+                <p class="review-item-text"> Công nghệ nhận diện giọng nói người dùng và so sánh trực tiếp với giọng bản xứ. Đây sẽ là một bước tiến lớn so với cách học tiếng Anh truyền thống</p>
+                <div class="author-review">
+                  <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/09/founder_Vinh.svg" class="author-img" alt="author-img">
+                  <div class="info-author">
+                    <p class="author-name">VINH PHAM</p>
+                    <p class="author-work-position">Google Play Store</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="elsa-feeling-review-item">
+                <div class="review-item-header">
+                  <img src="https://vn.elsaspeak.com/wp-content/themes/elsa-tot/static/Icons-Logo/comma-icon.svg" class="comma-icon">
+                  <h5>Công nghệ tuyệt vời</h5>
+                </div>
+                <p class="review-item-text"> Công nghệ nhận diện giọng nói người dùng và so sánh trực tiếp với giọng bản xứ. Đây sẽ là một bước tiến lớn so với cách học tiếng Anh truyền thống</p>
+                <div class="author-review">
+                  <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/09/founder_Vinh.svg" class="author-img" alt="author-img">
+                  <div class="info-author">
+                    <p class="author-name">VINH PHAM</p>
+                    <p class="author-work-position">Google Play Store</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="section-heading3">
+        <h3 style="color: #fff">VIDEOS 🎦</h3>
+        <p style="color: #fff">Ameritec AIPS - Ứng dụng bảo mật điện thoại di động hàng đầu tại Việt Nam</p>
+      </div>
+      <div id="carouselExampleControls2" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner carousel-inner-video">
+          <img src="/images/iphone.png" alt="" width="570px" class="mobile-mockup" />
+          <div class="carousel-item active carousel-video">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/JhGCnn5qkdI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="carousel-item carousel-video">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/WKDp26gBWx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="carousel-item carousel-video">
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/k4qSUe-wlYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <div class="sud">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 181.1"
+        style="enable-background: new 0 0 1920 181.1"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st1 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #fff;
+          }
+        </style>
+        <g>
+          <path
+            class="st1"
+            d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                   c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                   c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                   c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                   c15.3,22.7,51,22.7,53,23v28.1H0V80z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <section class="news">
+      <div class="section-heading2">
+        <h2>Tin tức & Ưu đãi 🎉</h2>
+      </div>
+      <div class="news-list">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="new">
+                <div class="header-img">
+                  <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/10/Son-Tung-M-TP-su-dung-ELSA-Speak-350x250.jpg" alt="">
+                </div>
+                <div class="desc-text">
+                  <h3 class="title">
+                    CÁCH CÀI ỨNG DỤNG BẢO MẬT ĐIỆN THOẠI AMERITEC AIPS</h3>
+                  <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem distinctio aliquam repellat veniam temporibus perferendis?...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="new">
+                <div class="header-img">
+                  <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/10/Son-Tung-M-TP-su-dung-ELSA-Speak-350x250.jpg" alt="">
+                </div>
+                <div class="desc-text">
+                  <h3 class="title">
+                    CÁCH CÀI ỨNG DỤNG BẢO MẬT ĐIỆN THOẠI AMERITEC AIPS</h3>
+                  <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem distinctio aliquam repellat veniam temporibus perferendis?...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="new">
+                <div class="header-img">
+                  <img src="https://vn.elsaspeak.com/wp-content/uploads/2020/10/Son-Tung-M-TP-su-dung-ELSA-Speak-350x250.jpg" alt="">
+                </div>
+                <div class="desc-text">
+                  <h3 class="title">
+                    CÁCH CÀI ỨNG DỤNG BẢO MẬT ĐIỆN THOẠI AMERITEC AIPS</h3>
+                  <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem distinctio aliquam repellat veniam temporibus perferendis?...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="btn btn-primary btn-lg" class="ml-3">Xem Thêm</a>
+        </div>
+      </div>
+    </section>
+    <div class="sud1">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 181.1"
+        style="enable-background: new 0 0 1920 181.1"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st2 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #0f0d2a;
+          }
+        </style>
+        <g>
+          <path
+            class="st2"
+            d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                    c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                    c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                    c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                    c15.3,22.7,51,22.7,53,23v28.1H0V80z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <section class="footer">
+      <div class="wrap-footer">
+        <div class="container-xl">
+          <div class="top-footer">
+            <img src="/images/logo-ameritec.png" alt="" width="200px">
+            <form action="" class="info-form">
+              <label for="">🎉 Nhận tin tức mới nhất về An ninh mạng vào hộp thư của bạn</label>
+              <div>
+                <input type="email" placeholder="Nhập Email Của Bạn">
+                <button type="submit">Gửi</button>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="info">
+                <div class="header-info">
+                  <h3>Corporate Office</h3>
+                  <p>📍 Address: 2505 S. Great Southwest Pkwy Grand Prairie, TX 75052</p>
+                  <p>📞 Tel: +1-844-446-9477</p>
+                  <p>📞 Tel: +1-844-I-Go-zIPS</p>
+                  <p>📫 Email: support@ameritecps.com</p>
+                  <p>🌍 Website: https://ameritecps.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="header-info">
+                <h3>Văn Phòng Tại Việt Nam</h3>
+                <p>📍 Địa chỉ: Tầng 25.02 Tòa nhà Viettel số 285 cách mạng tháng 8 , P.12, Q.10, TP. Hồ Chí Minh</p>
+                <p>📞 Điện thoại di động: 028.2250.8166</p>
+                <p>📫 Email: support@ameritecjsc.com</p>
+                <p>🌍 Website: https://ameritecjsc.com</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="header-info">
+                <h3>Hỗ Trợ Khách Hàng</h3>
+                <p><a href="#">Trung Tâm Hỗ Trợ Khách Hàng</a></p>
+                <p><a href="#">Chính Sách Bảo Mật Thông Tin</a></p>
+                <p><a href="#">Chính Sách Bảo Hành</a></p>
+                <p><a href="#">Chính Sách Thanh Toán</a></p>
+                <p><a href="#">Chính Sách Đổi Trả</a></p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="header-info">
+                <h3>Liên Hệ</h3>
+                <ul>
+                  <li><a href="#">
+                    <img src="/images/facebook.png" alt="" width="50px">
+                  </a></li>
+                  <li><a href="#">
+                    <img src="/images/youtube.png" alt="" width="50px">
+                  </a></li>
+                  <li><a href="#">
+                    <img src="/images/telegram.png" alt="" width="50px">
+                  </a></li>
+                </ul>
+                  <a href="#">
+                    <img src="/images/logosalenoti.png" alt="" width="200px"> 
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="copy-right">
+            <span>©&nbsp;Bản quyền thuộc về <a href="http://ameritecjsc.com">Ameritec</a>&nbsp; </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      $('.carousel').carousel({
+        interval: false
+      });
+    </script>
+  </body>
+</html>
